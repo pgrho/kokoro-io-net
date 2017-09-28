@@ -1,18 +1,9 @@
-using System.Runtime.Serialization;
+using System;
 
 namespace Shipwreck.KokoroIO
 {
-    [DataContract]
+    [Obsolete("Use KokoroIO.Client instead.", true)]
     public enum RoomKind
     {
-        [EnumMember(Value = RoomKindExtensions.PUBLIC_CHANNEL)]
-        PublicChannel,
-
-        [EnumMember(Value = RoomKindExtensions.PRIVATE_CHANNEL)]
-        PrivateChannel,
-
-        [EnumMember(Value = RoomKindExtensions.DIRECT_MESSAGE)]
-        DirectMessage
     }
-
 }

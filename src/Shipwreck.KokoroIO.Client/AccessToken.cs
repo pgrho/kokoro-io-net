@@ -5,15 +5,7 @@ using Newtonsoft.Json;
 
 namespace Shipwreck.KokoroIO
 {
-    [Serializable, DataContract]
     public class AccessToken
     {
-        [DefaultValue(null)]
-        [DataMember, JsonProperty("name")]
-        public string Name { get; set; }
-
-        [DefaultValue(null)]
-        [DataMember, JsonProperty("token")]
-        public string Token { get; set; }
     }
 }

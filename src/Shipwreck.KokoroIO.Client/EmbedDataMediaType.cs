@@ -1,29 +1,9 @@
-using System.Runtime.Serialization;
+using System;
 
 namespace Shipwreck.KokoroIO
 {
-    /// <summary>
-    /// Represents a type of of <see cref="EmbedDataMedia"/>.
-    /// </summary>
-    [DataContract]
+    [Obsolete("Use KokoroIO.Client instead.", true)]
     public enum EmbedDataMediaType
     {
-        /// <summary>
-        /// The media is an image.
-        /// </summary>
-        [EnumMember]
-        Image,
-
-        /// <summary>
-        /// The media is a video.
-        /// </summary>
-        [EnumMember]
-        Video,
-
-        /// <summary>
-        /// The media is an audio.
-        /// </summary>
-        [EnumMember]
-        Audio
     }
 }

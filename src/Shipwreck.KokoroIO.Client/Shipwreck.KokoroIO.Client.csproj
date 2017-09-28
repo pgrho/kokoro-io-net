@@ -3,25 +3,21 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
     <RootNamespace>Shipwreck.KokoroIO</RootNamespace>
-    <Version>0.0.9-pre</Version>
+    <Version>0.0.10-deleted</Version>
     <Authors>shipwreck.jp</Authors>
     <Company />
     <Description>kokoro.io client classes</Description>
-    <AssemblyVersion>0.0.9.0</AssemblyVersion>
-    <FileVersion>0.0.9.0</FileVersion>
+    <AssemblyVersion>0.0.10.0</AssemblyVersion>
+    <FileVersion>0.0.10.0</FileVersion>
     <PackageProjectUrl>https://github.com/pgrho/kokoro-io-net</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="KokoroIO.Client" Version="0.0.1-pre" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
     <Reference Include="System.Net.Http" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">
-    <PackageReference Include="System.Net.WebSockets.Client" Version="4.3.1" />
   </ItemGroup>
 </Project>

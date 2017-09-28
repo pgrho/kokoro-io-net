@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <RootNamespace>Shipwreck.KokoroIO</RootNamespace>
-    <Version>0.0.2-pre</Version>
+    <Version>0.0.3-deleted</Version>
     <Authors>shipwreck.jp</Authors>
     <Company />
     <Description>kokoro.io Bot utilities based on .NET Core (Microsoft.AspNetCore.Http.Abstractions)</Description>
@@ -14,11 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="1.1.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Shipwreck.KokoroIO.Client\Shipwreck.KokoroIO.Client.csproj" />
+    <PackageReference Include="KokoroIO.Bot.Core" Version="0.0.1-pre" />
   </ItemGroup>
 
 </Project>

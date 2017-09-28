@@ -1,14 +1,9 @@
-using System.Runtime.Serialization;
+using System;
 
 namespace Shipwreck.KokoroIO
 {
-    [DataContract]
+    [Obsolete("Use KokoroIO.Client instead.", true)]
     public enum ProfileType
     {
-        [EnumMember(Value = "user")]
-        User,
-
-        [EnumMember(Value = "bot")]
-        Bot,
     }
 }

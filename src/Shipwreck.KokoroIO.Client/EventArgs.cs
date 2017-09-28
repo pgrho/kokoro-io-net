@@ -2,13 +2,8 @@ using System;
 
 namespace Shipwreck.KokoroIO
 {
-    public sealed class EventArgs<T> : EventArgs
+    [Obsolete("Use KokoroIO.Client instead.", true)]
+    public class EventArgs<T>
     {
-        public EventArgs(T data)
-        {
-            Data = data;
-        }
-
-        public T Data { get; }
     }
 }

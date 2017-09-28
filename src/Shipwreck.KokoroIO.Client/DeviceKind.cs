@@ -1,31 +1,9 @@
-using System.Runtime.Serialization;
+using System;
 
 namespace Shipwreck.KokoroIO
 {
-    using static DeviceKindExtensions;
-
-    [DataContract]
+    [Obsolete("Use KokoroIO.Client instead.", true)]
     public enum DeviceKind
     {
-        [EnumMember(Value = UNKNOWN)]
-        Unknown,
-
-        [EnumMember(Value = OFFICIAL_WEB)]
-        OfficialWeb,
-
-        [EnumMember(Value = IOS)]
-        Ios,
-
-        [EnumMember(Value = ANDROID)]
-        Android,
-
-        [EnumMember(Value = UWP)]
-        Uwp,
-
-        [EnumMember(Value = CHROME)]
-        Chrome,
-
-        [EnumMember(Value = FIREFOX)]
-        Firefox
     }
 }
